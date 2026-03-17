@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://valkama.kim/sitemap.xml
