@@ -1,7 +1,44 @@
+@media print {
+    body {
+        background: white;
+    }
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    /* Hide the "PDF Version" link when actually printing the page */
+    a[href$=".pdf"] {
+        display: none;
+    }
+}
+
+p a:hover::before {
+    content: "> ";
+    color: #4af626; /* Matches your favicon logic */
+    font-weight: bold;
+}
+
+p a {
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #0077b5; /* Professional blue */
+}
+
 .main-container {
     width: 21cm;
-    height: 32.7cm;
-    margin: 0 auto;
+    min-height: 29.7cm; /* Changed from fixed height to min-height for content flow */
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Soft depth */
+    border: 1px solid #eee;
 }
 
 h1 {
@@ -73,5 +110,5 @@ h5 {
     font-style: italic;
     font-weight: normal;
     margin: 0;
-    margin-top: 3px;
+    margin-top: 0px;
 }
