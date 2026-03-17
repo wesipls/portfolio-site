@@ -29,8 +29,13 @@ p a {
     transition: all 0.2s ease;
     text-decoration: none;
     color: #0077b5; /* Professional blue */
+    padding: 2px 4px;
+    border-radius: 2px;
 }
-
+p a:hover {
+    background-color: #f0f7ff; /* Very light blue highlight */
+    color: #005582;
+}
 .main-container {
     width: 21cm;
     min-height: 29.7cm; /* Changed from fixed height to min-height for content flow */
@@ -39,7 +44,7 @@ p a {
     background-color: #fdfdfd;
     box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Soft depth */
     border: 1px solid #eee;
-}
+  }
 
 h1 {
   display: flex;
@@ -103,21 +108,19 @@ h3 {
     font-size: 1em;
     margin: 0;
 }
+h5 {
+    display: inline;
+    float: right;
+    font-size: 0.85em;
+    font-family: 'Inconsolata', monospace; /* Technical feel for dates */
+    font-style: normal;
+    color: #666;
+    margin-top: 2px;
+}
 
 h4 {
     display: inline;
     font-size: 0.9em;
-    font-style: italic;
-    font-weight: normal;
-    margin: 0;
-}
-
-h5 {
-    display: inline;
-    float: right;
-    font-size: 0.9em;
-    font-style: italic;
-    font-weight: normal;
-    margin: 0;
-    margin-top: 0px;
+    font-weight: 600;
+    color: #444;
 }
