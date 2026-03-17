@@ -61,9 +61,12 @@ span {
 }
 
 hr {
-    border: 0.1em solid black;
-    margin-top: 0px;
-
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    opacity: 0.2;
 }
 
 ul {
@@ -85,8 +88,14 @@ p {
 }
 
 h2 {
-margin-bottom: 0px;
-font-size: 1.1em;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #222;
+    display: flex;
+    align-items: center;
 }
 
 h3 {
