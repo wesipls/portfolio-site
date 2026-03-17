@@ -1,8 +1,26 @@
-
 .main-container {
     width: 21cm;
     height: 32.7cm;
     margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+
+span {
+    text-align: right;
+    font-size: 0.45em;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-bottom: 6px;
 }
 
 hr {
