@@ -7,7 +7,6 @@
     margin: 0 !important;
     padding: 0 !important;
     height: 100%;
-    /* Prevents a tiny overflow from triggering a blank 2nd page */
     overflow: hidden; 
     background-color: #fff;
   }
@@ -24,23 +23,14 @@
     background: transparent !important;
   }
   hr {
-    /* 1. Use a real border instead of a background color */
     border: 0 !important;
     border-top: 1px solid #333 !important;
-    
-    /* 2. Reset height and background to ensure no ghosting */
     height: 0 !important;
     background: transparent !important;
-    
-    /* 3. Force visibility for browsers that still try to hide it */
     opacity: 1 !important;
     visibility: visible !important;
-    
-    /* 4. Keep your spacing consistent */
     margin-top: 0 !important;
     margin-bottom: 8px !important;
-    
-    /* 5. The "Nuclear" option for Chrome/Safari color rendering */
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
@@ -74,7 +64,7 @@
 
 p a:hover::before {
     content: "> ";
-    color: #4af626; /* Matches your favicon logic */
+    color: #4af626;
     font-weight: bold;
 }
 
@@ -98,7 +88,6 @@ p a:hover::before {
 }
 
 .print-btn {
-    /* Inherit link styling to match contact section links */
     font-family: inherit;
     font-weight: inherit;
     color: #0077b5;
@@ -117,12 +106,12 @@ p a:hover::before {
 }
 .main-container {
     width: 21cm;
-    height: 29.7cm; /* Changed from fixed height to min-height for content flow */
+    height: 29.7cm;
     margin: 20px auto;
     padding: 40px;
     padding-top: 20px;
     background-color: #fdfdfd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Soft depth */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
     border: 1px solid #eee;
   }
 
@@ -203,7 +192,7 @@ h5 {
     display: inline;
     float: right;
     font-size: 0.85em;
-    font-family: 'Inconsolata', monospace; /* Technical feel for dates */
+    font-family: 'Inconsolata', monospace;
     font-style: normal;
     color: #666;
     margin-top: 2px;
