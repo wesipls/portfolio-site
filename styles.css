@@ -110,8 +110,6 @@ p a:hover::before {
     cursor: pointer;
     transition: all 0.2s ease;
     outline: none;
-    position: relative;
-    top: 1px;
 }
 .print-btn:hover, .print-btn:focus {
     background-color: #f0f7ff;
