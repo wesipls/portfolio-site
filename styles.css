@@ -61,7 +61,7 @@
 }
 
 @media print {
-  .print-btn {
+  .print-btn, .print-hide {
     display: none !important;
   }
 }
@@ -133,6 +133,15 @@ span {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     padding-bottom: 6px;
+}
+
+.separator {
+    font-size: inherit;
+    font-weight: inherit;
+    display: inline-block;
+    margin: 0 4px;
+    vertical-align: -2px;
+    color: inherit;
 }
 
 hr {
