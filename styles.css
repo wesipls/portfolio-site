@@ -38,9 +38,10 @@ p a:hover {
 }
 .main-container {
     width: 21cm;
-    min-height: 29.7cm; /* Changed from fixed height to min-height for content flow */
+    height: 29.7cm; /* Changed from fixed height to min-height for content flow */
     margin: 20px auto;
     padding: 40px;
+    padding-top: 20px;
     background-color: #fdfdfd;
     box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Soft depth */
     border: 1px solid #eee;
@@ -52,6 +53,7 @@ h1 {
     align-items: flex-end;
     font-size: 2.2em;
     margin-bottom: 0.2em;
+    margin-top: 0;
     font-weight: normal;
 }
 
@@ -71,7 +73,7 @@ hr {
     height: 1px;
     background: #333;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     opacity: 0.2;
 }
 
@@ -94,7 +96,7 @@ p {
 }
 
 h2 {
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 5px;
     font-size: 1.1em;
     text-transform: uppercase;
