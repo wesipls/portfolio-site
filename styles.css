@@ -58,7 +58,10 @@
   li {
     break-inside: avoid;
   }
-  a[href^="http"] {
+}
+
+@media print {
+  .print-btn {
     display: none !important;
   }
 }
@@ -77,8 +80,28 @@ p a {
     border-radius: 2px;
 }
 p a:hover {
-    background-color: #f0f7ff; /* Very light blue highlight */
+    background-color: #f0f7ff;
     color: #005582;
+}
+
+.print-btn {
+    font-family: inherit;
+    font-weight: 600;
+    color: #005582;
+    background: #e7f5ff;
+    border: 1px solid #b6dcf7;
+    padding: 3px 10px;
+    margin-left: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.15s, border 0.15s, color 0.15s;
+    outline: none;
+    font-size: 0.8em;
+}
+.print-btn:hover, .print-btn:focus {
+    background: #d0ebff;
+    color: #0077b5;
+    border-color: #339af0;
 }
 .main-container {
     width: 21cm;
