@@ -48,6 +48,9 @@
   li {
     break-inside: avoid;
   }
+  ul {
+    break-inside: avoid;
+  }
 }
 .contact-link:hover::before {
     content: "> ";
