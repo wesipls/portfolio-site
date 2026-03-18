@@ -59,6 +59,12 @@
     break-inside: avoid;
   }
 }
+.contact-link:hover::before {
+    content: "> ";
+    color: #4af626;
+    font-weight: bold;
+    font-size: 1em;
+}
 
 @media print {
   .print-btn, .print-hide {
@@ -72,36 +78,42 @@ p a:hover::before {
     font-weight: bold;
 }
 
-p a {
+.contact-link {
     transition: all 0.2s ease;
     text-decoration: none;
-    color: #0077b5; /* Professional blue */
+    color: #0077b5;
     padding: 2px 4px;
     border-radius: 2px;
+    font-family: inherit;
+    font-weight: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
 }
-p a:hover {
+.contact-link:hover, .contact-link:focus {
     background-color: #f0f7ff;
     color: #005582;
 }
 
 .print-btn {
+    /* Inherit link styling to match contact section links */
     font-family: inherit;
-    font-weight: 600;
-    color: #005582;
-    background: #e7f5ff;
-    border: 1px solid #b6dcf7;
-    padding: 3px 10px;
-    margin-left: 6px;
-    border-radius: 3px;
+    font-weight: inherit;
+    color: #0077b5;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    margin-left: 4px;
+    border-radius: 2px;
     cursor: pointer;
-    transition: background 0.15s, border 0.15s, color 0.15s;
+    transition: all 0.2s ease;
     outline: none;
-    font-size: 0.8em;
 }
 .print-btn:hover, .print-btn:focus {
-    background: #d0ebff;
-    color: #0077b5;
-    border-color: #339af0;
+    background-color: #f0f7ff;
+    color: #005582;
 }
 .main-container {
     width: 21cm;
