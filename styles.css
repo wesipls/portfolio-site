@@ -58,6 +58,9 @@
   li {
     break-inside: avoid;
   }
+  a[href^="http"] {
+    display: none !important;
+  }
 }
 
 p a:hover::before {
