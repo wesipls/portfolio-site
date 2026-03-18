@@ -1,22 +1,63 @@
 @media print {
-    body {
-        background: white;
-    }
-    .main-container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-        border: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    /* Hide the "PDF Version" link when actually printing the page */
-    a[href$=".pdf"] {
-        display: none;
-    }
+  @page {
+    size: auto;
+    margin: 0;
+  }
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    /* Prevents a tiny overflow from triggering a blank 2nd page */
+    overflow: hidden; 
+    background-color: #fff;
+  }
+  body > * {
+    display: none !important;
+  }
+  .main-container {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+  hr {
+    /* 1. Use a real border instead of a background color */
+    border: 0 !important;
+    border-top: 1px solid #333 !important;
+    
+    /* 2. Reset height and background to ensure no ghosting */
+    height: 0 !important;
+    background: transparent !important;
+    
+    /* 3. Force visibility for browsers that still try to hide it */
+    opacity: 1 !important;
+    visibility: visible !important;
+    
+    /* 4. Keep your spacing consistent */
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    
+    /* 5. The "Nuclear" option for Chrome/Safari color rendering */
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  p a {
+    color: #000 !important;
+    text-decoration: none !important;
+    padding: 0 !important;
+  }
+  p a::before {
+    content: "" !important;
+  }
+  h2, h3 {
+    break-after: avoid;
+  }
+  li {
+    break-inside: avoid;
+  }
 }
 
 p a:hover::before {
