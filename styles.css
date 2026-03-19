@@ -162,9 +162,9 @@ hr {
 }
 
 ul {
+    clear: both;
     padding-left: 0.2em;
     margin: 0;
-    margin-top: 5px;
     margin-bottom: 25px;
 }
 
@@ -172,6 +172,7 @@ li {
     font-size: 0.8em;
     margin-left: 1.2em;
     padding-left: 0;
+    padding-bottom: 2px;
     list-style-position: outside;
 }
 
@@ -203,6 +204,7 @@ h5 {
     font-style: normal;
     color: #666;
     margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 h4 {
