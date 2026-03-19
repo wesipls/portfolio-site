@@ -51,18 +51,15 @@
   ul {
     break-inside: avoid;
   }
+  .print-btn, .print-hide {
+    display: none !important;
+  }
 }
 .contact-link:hover::before {
     content: "> ";
     color: #4af626;
     font-weight: bold;
     font-size: 1em;
-}
-
-@media print {
-  .print-btn, .print-hide {
-    display: none !important;
-  }
 }
 
 p a:hover::before {
@@ -157,7 +154,7 @@ hr {
     height: 1px;
     background: #333;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     opacity: 0.2;
 }
 
@@ -181,8 +178,8 @@ p {
 }
 
 h2 {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 16px;
+    margin-bottom: 2px;
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
