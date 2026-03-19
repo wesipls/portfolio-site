@@ -1,0 +1,32 @@
+<div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'row', backgroundColor: '#fdfdfd', fontFamily: '"JetBrains Mono", "Roboto Mono", monospace', color: '#222' }}>
+  <div style={{ width: '38%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '40px', backgroundColor: '#f5f5f5', borderRight: '1px solid #333' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div style={{ fontSize: 55, fontWeight: 'bold', color: '#000', marginBottom: 5, display: 'flex' }}>Kim Valkama</div>
+      <div style={{ fontSize: 28, color: '#444', textTransform: 'uppercase', letterSpacing: '0.15em', display: 'flex', marginBottom: 40 }}>Infra & Platform Engineer</div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <div style={{ display: 'flex', fontSize: 26 }}><span style={{ color: '#666', width: '100px', display: 'flex', fontWeight: 'bold' }}>tel:</span><span style={{ color: '#222', display: 'flex' }}>+358 44 595 9906</span></div>
+        <div style={{ display: 'flex', fontSize: 26 }}><span style={{ color: '#666', width: '100px', display: 'flex', fontWeight: 'bold' }}>mail:</span><span style={{ color: '#222', display: 'flex' }}>contact@valkama.kim</span></div>
+        <div style={{ display: 'flex', fontSize: 26 }}><span style={{ color: '#666', width: '100px', display: 'flex', fontWeight: 'bold' }}>web:</span><span style={{ color: '#222', display: 'flex' }}>valkama.kim</span></div>
+        <div style={{ display: 'flex', fontSize: 26 }}><span style={{ color: '#666', width: '100px', display: 'flex', fontWeight: 'bold' }}>loc:</span><span style={{ color: '#222', display: 'flex' }}>Espoo, FI</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style={{ width: '62%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '60px' }}>
+    <div style={{ color: '#666', fontSize: 32, display: 'flex', marginBottom: 30, fontStyle: 'italic' }}>Preferred stack for new builds & scaling.</div>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ color: '#888', fontSize: 26, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2, display: 'flex' }}>// Platform</div>
+        <div style={{ fontSize: 26, fontWeight: 'bold', color: '#000', display: 'flex' }}>Debian · Ansible · Podman · OpenTofu</div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ color: '#888', fontSize: 26, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2, display: 'flex' }}>// Pipeline</div>
+        <div style={{ fontSize: 26, fontWeight: 'bold', color: '#000', display: 'flex' }}>Git · Bash · Github Actions · Grafana</div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ color: '#888', fontSize: 26, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2, display: 'flex' }}>// Backend</div>
+        <div style={{ fontSize: 26, fontWeight: 'bold', color: '#000', display: 'flex' }}>Go · PHP · MySQL · AWK · Perl</div>
+      </div>
+    </div>
+  </div>
+</div>
