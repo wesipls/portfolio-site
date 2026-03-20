@@ -54,6 +54,9 @@
   .print-btn, .print-hide {
     display: none !important;
   }
+  .clip {
+        display: none !important; /* Keep the printed PDF clean */
+  }
 }
 .contact-link:hover::before {
     content: "> ";
@@ -114,6 +117,24 @@ p a:hover::before {
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     border: 1px solid #eee;
   }
+.clip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e1f0ff;
+    clip-path: polygon(0% 0%, calc(100% - 10px) 0%, 100% 50%, calc(100% - 10px) 100%, 0% 100%);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    width: 10cm;
+    height: 0.75cm;
+    margin-left: -40px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0077b5;
+}
+.clip p {
+  padding-left: 10px;
+  font-size: 0.8em;
+}
 .tech-row {
   margin-bottom: 5px;
   margin-top: 5px;
