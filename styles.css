@@ -11,6 +11,7 @@
     background-color: #fff;
   }
   body > * {
+    font-family: "Courier New", Courier, monospace;
     display: none !important;
   }
   .main-container {
@@ -58,13 +59,19 @@
         display: none !important; /* Keep the printed PDF clean */
   }
 }
+body {
+font-family: "Courier New", Courier, monospace;
+-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
 .contact-link:hover::before {
     content: "> ";
     color: #4af626;
     font-weight: bold;
     font-size: 1em;
 }
-
 p a:hover::before {
     content: "> ";
     color: #4af626;
@@ -218,7 +225,6 @@ h5 {
     display: inline;
     float: right;
     font-size: 0.85em;
-    font-family: 'Inconsolata', monospace;
     font-style: normal;
     color: #666;
     margin-top: 2px;
