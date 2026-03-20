@@ -232,14 +232,11 @@ li {
   .main-container {
     width: 95%;
     max-width: 95vw;
-    
     height: auto;
-    min-height: auto; 
-    
-    margin: 10px auto; 
+    min-height: auto;
+    margin: 10px auto;
     padding: 20px 15px;
-    
-    box-sizing: border-box; 
+    box-sizing: border-box;
     overflow-x: hidden;
   }
 
@@ -255,25 +252,17 @@ li {
     padding-bottom: 0;
   }
 
-  .exp-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-  }
-
-  h5 {
-    margin-left: 0;
-    font-style: italic;
-  }
   .contact-block {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 10px;
   }
+
   .contact-block .separator {
     display: none;
   }
+
   .contact-link {
     background-color: #f4faff;
     border: 1px solid #e1f0ff;
@@ -282,7 +271,50 @@ li {
     border-radius: 4px;
     white-space: nowrap;
   }
+
   .print-btn {
     display: none !important;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    border-left: 2px solid #0077b5;
+  }
+
+  h3 {
+    font-size: 11pt;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 10pt;
+    color: #0077b5;
+  }
+
+  h5 {
+    margin-left: 0;
+    font-size: 8.5pt;
+    font-style: italic;
+    color: #888;
+  }
+
+  li {
+    font-size: 9pt;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  .clip {
+    width: 100%;
+    margin-left: 0;
+    clip-path: none;
+    height: auto;
+    padding: 8px 0;
+    border-radius: 0 4px 4px 0;
   }
 }
