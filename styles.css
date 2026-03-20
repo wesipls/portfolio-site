@@ -206,6 +206,63 @@ li {
     display: none !important;
   }
   .clip {
-        display: none !important; /* Keep the printed PDF clean */
+        display: none !important;
+  }
+}
+@media screen and (min-width: 2500px) {
+  @supports (zoom: 1.5) {
+    body {
+      zoom: 1.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @supports not (zoom: 1.5) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: scale(1.5);
+      transform-origin: top center;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 95%;
+    max-width: 95vw;
+    
+    height: auto;
+    min-height: auto; 
+    
+    margin: 10px auto; 
+    padding: 20px 15px;
+    
+    box-sizing: border-box; 
+    overflow-x: hidden;
+  }
+
+  h1 {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 22pt;
+  }
+
+  h1 span {
+    font-size: 10pt;
+    margin-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  h5 {
+    margin-left: 0;
+    font-style: italic;
   }
 }
