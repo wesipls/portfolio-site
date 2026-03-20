@@ -1,3 +1,153 @@
+body {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    -webkit-font-smoothing: antialiased;
+}
+.main-container {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 20px auto;
+    padding: 0.5cm 1cm;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+  }
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 28pt;
+    margin: 0;
+    font-weight: normal;
+}
+span {
+    font-size: 12pt;
+    font-weight: normal;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+}
+.contact-block{
+  margin: 0;
+}
+.contact-link {
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #0077b5;
+    padding: 2px 2px;
+    border-radius: 2px;
+    font-size: 9pt;
+    cursor: pointer;
+}
+.contact-link:hover::before {
+    content: "> ";
+    color: #4af626;
+    font-weight: bold;
+    font-size: 1em;
+}
+.contact-link:hover, .contact-link:focus {
+    background-color: #f0f7ff;
+    color: #005582;
+}
+.print-btn {
+    font-family: inherit;
+    font-weight: inherit;
+    color: #0077b5;
+    background: none;
+    border: none;
+    padding: 2px 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.print-btn:hover, .print-btn:focus {
+    background-color: #f0f7ff;
+    color: #005582;
+}
+.separator {
+    font-size: inherit;
+    font-weight: inherit;
+}
+h2 {
+    margin-top: 0.6cm;
+    margin-bottom: 1px;
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin-top: 1px;
+    margin-bottom: 8px;
+    opacity: 0.2;
+}
+.profile {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+.tech-row {
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-size: 9.5pt;
+
+}
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+h3 {
+    font-size: 12pt;
+    margin: 0;
+}
+h4 {
+  font-size: 11pt;
+  color: #666;
+  margin: 0;
+}
+h5 {
+  font-size: 11pt;
+  color: #666;
+  margin: 0;
+  margin-left: auto;
+}
+ul {
+    margin: 0;
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+li {
+    font-size: 9.5pt;
+    padding-bottom: 2px;
+}
+.thesis-link {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.clip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e1f0ff;
+    clip-path: polygon(0% 0%, calc(100% - 10px) 0%, 100% 50%, calc(100% - 10px) 100%, 0% 100%);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    width: 10cm;
+    height: 0.75cm;
+    margin-left: -40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-left: 5px solid #0077b5;
+}
+.clip p {
+  padding-left: 10px;
+  font-size: 9pt;
+}
+
 @media print {
   @page {
     size: auto;
@@ -58,180 +208,4 @@
   .clip {
         display: none !important; /* Keep the printed PDF clean */
   }
-}
-body {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-}
-.contact-link:hover::before {
-    content: "> ";
-    color: #4af626;
-    font-weight: bold;
-    font-size: 1em;
-}
-p a:hover::before {
-    content: "> ";
-    color: #4af626;
-    font-weight: bold;
-}
-
-.contact-link {
-    transition: all 0.2s ease;
-    text-decoration: none;
-    color: #0077b5;
-    padding: 2px 2px;
-    border-radius: 2px;
-    font-family: inherit;
-    font-weight: inherit;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    cursor: pointer;
-}
-.contact-link:hover, .contact-link:focus {
-    background-color: #f0f7ff;
-    color: #005582;
-}
-
-.print-btn {
-    font-family: inherit;
-    font-weight: inherit;
-    color: #0077b5;
-    background: none;
-    border: none;
-    padding: 2px 4px;
-    margin-left: 4px;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    outline: none;
-}
-.print-btn:hover, .print-btn:focus {
-    background-color: #f0f7ff;
-    color: #005582;
-}
-.main-container {
-    width: 21cm;
-    height: 29.7cm;
-    margin: 20px auto;
-    padding: 40px;
-    padding-top: 20px;
-    background-color: #fdfdfd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-  }
-.clip {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #e1f0ff;
-    clip-path: polygon(0% 0%, calc(100% - 10px) 0%, 100% 50%, calc(100% - 10px) 100%, 0% 100%);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
-    width: 10cm;
-    height: 0.75cm;
-    margin-left: -40px;
-    margin-top: -5px;
-    margin-bottom: 10px;
-    border-left: 5px solid #0077b5;
-}
-.clip p {
-  padding-left: 10px;
-  font-size: 0.8em;
-}
-.tech-row {
-  margin-bottom: 5px;
-  margin-top: 5px;
-
-}
-h1 {
-  display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 2.2em;
-    margin-bottom: -10px;
-    margin-top: 0;
-    font-weight: normal;
-}
-
-span {
-    text-align: right;
-    font-size: 0.45em;
-    line-height: 1.2;
-    font-weight: normal;
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding-bottom: 6px;
-}
-
-.separator {
-    font-size: inherit;
-    font-weight: inherit;
-    display: inline-block;
-    margin: 0 0px 0 7px;
-    vertical-align: -1px;
-    color: inherit;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    margin-top: 2px;
-    margin-bottom: 8px;
-    opacity: 0.2;
-}
-
-ul {
-    clear: both;
-    padding-left: 0.2em;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-li {
-    font-size: 0.8em;
-    margin-left: 1.2em;
-    padding-left: 0;
-    padding-bottom: 2px;
-    list-style-position: outside;
-}
-
-p {
-  font-size: 0.8em;
-}
-
-h2 {
-    margin-top: 16px;
-    margin-bottom: 2px;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #222;
-    display: flex;
-    align-items: center;
-}
-
-h3 {
-    display: inline;
-    font-size: 1em;
-    margin: 0;
-}
-h5 {
-    display: inline;
-    float: right;
-    font-size: 0.9em;
-    font-style: normal;
-    color: #666;
-    margin-top: 1px;
-    margin-bottom: 12px;
-}
-
-h4 {
-    display: inline;
-    font-size: 0.9em;
-    font-weight: 600;
-    color: #444;
 }
