@@ -265,4 +265,24 @@ li {
     margin-left: 0;
     font-style: italic;
   }
+  .contact-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .contact-block .separator {
+    display: none;
+  }
+  .contact-link {
+    background-color: #f4faff;
+    border: 1px solid #e1f0ff;
+    padding: 4px 8px;
+    font-size: 10pt;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .print-btn {
+    display: none !important;
+  }
 }
