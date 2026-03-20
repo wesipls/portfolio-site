@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /tailored/
 Sitemap: https://valkama.kim/sitemap.xml
