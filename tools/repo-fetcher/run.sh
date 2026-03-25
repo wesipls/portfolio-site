@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
-
 set -e
-
 cd "$(dirname "$0")"
-
-echo "Building repo-fetcher..."
-go build -o ../bin/repo-fetcher
-
-echo "Running repo-fetcher..."
+if [ ! -f ../bin/repo-fetcher ] || [ main.go -nt ../bin/repo-fetcher ]; then
+  go build -o ../bin/repo-fetcher
+fi
 ../bin/repo-fetcher
-
-echo "Done."
+cp projects.json /var/www/html/
+chmod 644 /var/www/html/projects.json
