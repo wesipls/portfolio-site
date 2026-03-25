@@ -47,7 +47,6 @@ function createLanguageBar(languages = {}) {
   const sorted = Object.entries(languages)
     .sort((a, b) => b[1] - a[1]);
 
-  // 👉 LABELS
   const labels = document.createElement("div");
 
   sorted.forEach(([lang, bytes], index) => {
@@ -56,7 +55,6 @@ function createLanguageBar(languages = {}) {
     const span = document.createElement("span");
     span.textContent = `${lang} ${percent}%`;
 
-    // spacing between items
     if (index < sorted.length - 1) {
       span.textContent += " • ";
     }
@@ -64,7 +62,6 @@ function createLanguageBar(languages = {}) {
     labels.appendChild(span);
   });
 
-  // 👉 BAR (your existing logic)
   const bar = document.createElement("div");
 
   sorted.forEach(([lang, bytes]) => {
@@ -78,7 +75,6 @@ function createLanguageBar(languages = {}) {
     bar.appendChild(segment);
   });
 
-  // 👉 assemble
   wrapper.appendChild(labels);
   wrapper.appendChild(bar);
 
