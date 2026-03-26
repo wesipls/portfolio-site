@@ -25,17 +25,14 @@ function createProjectCard(repo) {
     const desc = document.createElement("p");
     desc.className = "project-desc";
     desc.textContent = repo.description || "No description";
-
-    const meta = document.createElement("small");
+    const meta = document.createElement("p");
     meta.className = "project-meta";
-
     meta.textContent = "Updated: " + formatDate(repo.pushed_at);
-
     const langBar = createLanguageBar(repo.languages);
 
     card.appendChild(title);
-    card.appendChild(desc);
     card.appendChild(meta);
+    card.appendChild(desc);
     card.appendChild(langBar);
 
     return card;

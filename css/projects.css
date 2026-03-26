@@ -1,22 +1,25 @@
 .project-card {
-    padding: 1rem;
-    border: 1px solid #333;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    padding: 0.3cm;
+    margin-bottom: 0.75cm;
+    border: 1px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
 }
 
 .project-title {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 16pt;
     text-decoration: none;
 }
 
 .project-desc {
-    margin: 0.5rem 0;
+    margin: 10px 0;
 }
 
 .project-meta {
     color: #888;
+    margin: 0;
 }
 
 .lang-bar {
