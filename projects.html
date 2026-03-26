@@ -1,68 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kim Valkama | Projects</title>
-    <meta name="author" content="Kim Valkama">
-    <meta name="description" content="Kim Valkama | Infrastructure & Platform Engineer. Changing your default server editor to Vim since 2013.">
-    <meta property="og:title" content="Kim Valkama | Infrastructure & Platform Engineer">
-    <meta property="og:description" content="Kim Valkama | Infrastructure & Platform Engineer. Changing your default server editor to Vim since 2013.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://valkama.kim/projects">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kim Valkama | Infrastructure & Platform Engineer">
-    <meta name="twitter:description" content="Changing your default server editor to Vim since 2013.">
-    <meta property="og:image" content="https://valkama.kim/assets/og.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-    <meta name="robots" content="index, follow">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="canonical" href="https://valkama.kim/" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🛠️</text></svg>">
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Kim Valkama",
-    "url": "https://valkama.kim/projects",
-    "jobTitle": "Infrastructure & Platform Engineer",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Espoo",
-        "addressCountry": "Finland"
-    },
-    "sameAs": [
-        "https://github.com/wesipls",
-        "https://linkedin.com/in/kim-valkama"
-    ],
-    "knowsAbout": [
-        "Platform Engineering",
-        "Infrastructure as Code",
-        "Linux System Administration",
-        "CI/CD Pipelines",
-        "Cloud Infrastructure",
-        "Automation",
-        "Disaster Recovery"
-    ],
-    "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Laurea University of Applied Sciences"
-    }
-    }
-</script>
-</head>
-<body>
-    <div class="main-container">
-  <h1>My Projects</h1>
-  <div data-projects></div>
-      <script type="module">
-        import "./js/vim.js";
-        import "./js/projects.js";
-    </script>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kim Valkama | Projects</title>
+        <meta name="author" content="Kim Valkama" />
+        <meta
+            name="description"
+            content="Kim Valkama | Infrastructure & Platform Engineer. Changing your default server editor to Vim since 2013."
+        />
+        <meta
+            property="og:title"
+            content="Kim Valkama | Infrastructure & Platform Engineer"
+        />
+        <meta
+            property="og:description"
+            content="Kim Valkama | Infrastructure & Platform Engineer. Changing your default server editor to Vim since 2013."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://valkama.kim/projects" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Kim Valkama | Infrastructure & Platform Engineer"
+        />
+        <meta
+            name="twitter:description"
+            content="Changing your default server editor to Vim since 2013."
+        />
+        <meta property="og:image" content="https://valkama.kim/assets/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="robots" content="index, follow" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/template.css" />
+        <link rel="stylesheet" href="css/projects.css" />
+        <link rel="canonical" href="https://valkama.kim/" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🛠️</text></svg>"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Kim Valkama",
+                "url": "https://valkama.kim/projects",
+                "jobTitle": "Infrastructure & Platform Engineer",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Espoo",
+                    "addressCountry": "Finland"
+                },
+                "sameAs": [
+                    "https://github.com/wesipls",
+                    "https://linkedin.com/in/kim-valkama"
+                ],
+                "knowsAbout": [
+                    "Platform Engineering",
+                    "Infrastructure as Code",
+                    "Linux System Administration",
+                    "CI/CD Pipelines",
+                    "Cloud Infrastructure",
+                    "Automation",
+                    "Disaster Recovery"
+                ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Laurea University of Applied Sciences"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>My Projects</h1>
+            <p>
+                The following projects are fetched from GitHub and sorted by
+                most recent activity.
+            </p>
+            <div data-projects></div>
+            <script type="module">
+                import "./js/vim.js";
+                import "./js/projects.js";
+            </script>
+        </div>
+    </body>
 </html>
