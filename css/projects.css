@@ -1,0 +1,32 @@
+.project-card {
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.project-desc {
+    margin: 0.5rem 0;
+}
+
+.project-meta {
+    color: #888;
+}
+
+.lang-bar {
+    display: flex;
+    height: 6px;
+    margin-top: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.lang-segment {
+    height: 100%;
+}
