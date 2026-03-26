@@ -69,8 +69,18 @@ h2 {
 .side-link {
     font-size: 9pt;
     text-decoration: none;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     text-transform: none;
+    text-decoration: none;
+    color: #0077b5;
+    letter-spacing: 0px;
+    font-weight: normal;
+    padding: 2px 2px;
+}
+.side-link:hover,
+.side-link:focus {
+    background-color: #f0f7ff;
+    color: #005582;
 }
 hr {
     border: 0;
