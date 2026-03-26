@@ -14,8 +14,8 @@ span {
     letter-spacing: 1px;
     padding-bottom: 6px;
 }
-.contact-block{
-  margin: 0;
+.contact-block {
+    margin: 0;
 }
 .contact-link {
     transition: all 0.2s ease;
@@ -32,7 +32,8 @@ span {
     font-weight: bold;
     font-size: 1em;
 }
-.contact-link:hover, .contact-link:focus {
+.contact-link:hover,
+.contact-link:focus {
     background-color: #f0f7ff;
     color: #005582;
 }
@@ -46,7 +47,8 @@ span {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-.print-btn:hover, .print-btn:focus {
+.print-btn:hover,
+.print-btn:focus {
     background-color: #f0f7ff;
     color: #005582;
 }
@@ -55,11 +57,20 @@ span {
     font-weight: inherit;
 }
 h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-top: 0.6cm;
     margin-bottom: 1px;
     font-size: 14pt;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+.side-link {
+    font-size: 9pt;
+    text-decoration: none;
+    margin-bottom: 2px;
+    text-transform: none;
 }
 hr {
     border: 0;
@@ -78,29 +89,28 @@ hr {
     margin-bottom: 6px;
     margin-top: 6px;
     font-size: 9.5pt;
-
 }
 .exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 5px;
-  margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5px;
+    margin-bottom: 5px;
 }
 h3 {
     font-size: 12pt;
     margin: 0;
 }
 h4 {
-  font-size: 11pt;
-  color: #666;
-  margin: 0;
+    font-size: 11pt;
+    color: #666;
+    margin: 0;
 }
 h5 {
-  font-size: 11pt;
-  color: #666;
-  margin: 0;
-  margin-left: auto;
+    font-size: 11pt;
+    color: #666;
+    margin: 0;
+    margin-left: auto;
 }
 ul {
     margin: 0;
@@ -112,8 +122,8 @@ li {
     padding-bottom: 2px;
 }
 .thesis-link {
-  font-weight: bold;
-  letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .clip {
@@ -121,7 +131,13 @@ li {
     align-items: center;
     justify-content: flex-start;
     background-color: #e1f0ff;
-    clip-path: polygon(0% 0%, calc(100% - 10px) 0%, 100% 50%, calc(100% - 10px) 100%, 0% 100%);
+    clip-path: polygon(
+        0% 0%,
+        calc(100% - 10px) 0%,
+        100% 50%,
+        calc(100% - 10px) 100%,
+        0% 100%
+    );
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
     width: 10cm;
     height: 0.75cm;
@@ -131,205 +147,211 @@ li {
     border-left: 5px solid #0077b5;
 }
 .clip p {
-  padding-left: 10px;
-  font-size: 9pt;
+    padding-left: 10px;
+    font-size: 9pt;
 }
 
 @media print {
-  @page {
-    size: auto;
-    margin: 0;
-  }
-  html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 100%;
-    overflow: hidden; 
-    background-color: #fff;
-  }
-  body > * {
-    font-family: 'JetBrains Mono', 'Courier New', monospace;
-    display: none !important;
-  }
-  .main-container {
-    display: block !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-  }
-  hr {
-    border: 0 !important;
-    border-top: 1px solid #333 !important;
-    height: 0 !important;
-    background: transparent !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    margin-top: 0 !important;
-    margin-bottom: 8px !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-  p a {
-    color: #000 !important;
-    text-decoration: none !important;
-    padding: 0 !important;
-  }
-  p a::before {
-    content: "" !important;
-  }
-  h2, h3 {
-    break-after: avoid;
-  }
-  li {
-    break-inside: avoid;
-  }
-  ul {
-    break-inside: avoid;
-  }
-  .print-btn, .print-hide {
-    display: none !important;
-  }
-  .clip {
+    @page {
+        size: auto;
+        margin: 0;
+    }
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    body > * {
+        font-family: "JetBrains Mono", "Courier New", monospace;
         display: none !important;
-  }
+    }
+    .main-container {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+    hr {
+        border: 0 !important;
+        border-top: 1px solid #333 !important;
+        height: 0 !important;
+        background: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        margin-top: 0 !important;
+        margin-bottom: 8px !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    p a {
+        color: #000 !important;
+        text-decoration: none !important;
+        padding: 0 !important;
+    }
+    p a::before {
+        content: "" !important;
+    }
+    h2,
+    h3 {
+        break-after: avoid;
+    }
+    li {
+        break-inside: avoid;
+    }
+    ul {
+        break-inside: avoid;
+    }
+    .print-btn,
+    .print-hide {
+        display: none !important;
+    }
+    .clip {
+        display: none !important;
+    }
+    .side-link {
+        display: none !important;
+    }
 }
 @media screen and (min-width: 2500px) {
-  @supports (zoom: 1.5) {
-    body {
-      zoom: 1.5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    @supports (zoom: 1.5) {
+        body {
+            zoom: 1.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
-  }
-  @supports not (zoom: 1.5) {
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform: scale(1.5);
-      transform-origin: top center;
+    @supports not (zoom: 1.5) {
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: scale(1.5);
+            transform-origin: top center;
+        }
     }
-  }
 }
 @media screen and (max-width: 768px) {
-  .main-container {
-    width: 95%;
-    max-width: 95vw;
-    height: auto;
-    min-height: auto;
-    margin: 10px auto;
-    padding: 20px 15px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
+    .main-container {
+        width: 95%;
+        max-width: 95vw;
+        height: auto;
+        min-height: auto;
+        margin: 10px auto;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
 
-  h1 {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 22pt;
-  }
+    h1 {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 22pt;
+    }
 
-  h1 span {
-    font-size: 10pt;
-    margin-top: 5px;
-    padding-bottom: 0;
-  }
+    h1 span {
+        font-size: 10pt;
+        margin-top: 5px;
+        padding-bottom: 0;
+    }
 
-  .contact-block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-  }
+    .contact-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+    }
 
-  .contact-block .separator {
-    display: none;
-  }
+    .contact-block .separator {
+        display: none;
+    }
 
-  .contact-link {
-    background-color: #f4faff;
-    border: 1px solid #e1f0ff;
-    padding: 4px 8px;
-    font-size: 10pt;
-    border-radius: 4px;
-    white-space: nowrap;
-  }
+    .contact-link {
+        background-color: #f4faff;
+        border: 1px solid #e1f0ff;
+        padding: 4px 8px;
+        font-size: 10pt;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
 
-  .print-btn {
-    display: none !important;
-  }
+    .print-btn {
+        display: none !important;
+    }
 
-  .exp-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-    margin-bottom: 8px;
-    padding-left: 8px;
-    border-left: 2px solid #0077b5;
-  }
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        margin-bottom: 8px;
+        padding-left: 8px;
+        border-left: 2px solid #0077b5;
+    }
 
-  h3 {
-    font-size: 11pt;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+    h3 {
+        font-size: 11pt;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 
-  h4 {
-    font-size: 10pt;
-    color: #0077b5;
-  }
+    h4 {
+        font-size: 10pt;
+        color: #0077b5;
+    }
 
-  h5 {
-    margin-left: 0;
-    font-size: 8.5pt;
-    font-style: italic;
-    color: #888;
-  }
+    h5 {
+        margin-left: 0;
+        font-size: 8.5pt;
+        font-style: italic;
+        color: #888;
+    }
 
-  li {
-    font-size: 9pt;
-    line-height: 1.4;
-    margin-bottom: 4px;
-  }
+    li {
+        font-size: 9pt;
+        line-height: 1.4;
+        margin-bottom: 4px;
+    }
 
-  .clip {
-    width: 100%;
-    margin-left: 0;
-    clip-path: none;
-    height: auto;
-    padding: 8px 0;
-    border-radius: 0 4px 4px 0;
-  }
-  .tech-row {
-    margin-bottom: 12px;
-    line-height: 1.5;
-    font-size: 9.5pt;
-  }
-  .tech-row strong {
-    display: block;
-    color: #333;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-    font-size: 8pt;
-    letter-spacing: 0.5px;
-  }
-  .tech-row {
-    padding: 8px;
-    background-color: #fafafa;
-    border-radius: 4px;
-    border: 1px solid #f0f0f0;
-  }
-  .thesis-link {
-    display: inline-block;
-    margin-top: 5px;
-    padding: 4px 10px;
-    background: #eee;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 9pt;
-  }
+    .clip {
+        width: 100%;
+        margin-left: 0;
+        clip-path: none;
+        height: auto;
+        padding: 8px 0;
+        border-radius: 0 4px 4px 0;
+    }
+    .tech-row {
+        margin-bottom: 12px;
+        line-height: 1.5;
+        font-size: 9.5pt;
+    }
+    .tech-row strong {
+        display: block;
+        color: #333;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        font-size: 8pt;
+        letter-spacing: 0.5px;
+    }
+    .tech-row {
+        padding: 8px;
+        background-color: #fafafa;
+        border-radius: 4px;
+        border: 1px solid #f0f0f0;
+    }
+    .thesis-link {
+        display: inline-block;
+        margin-top: 5px;
+        padding: 4px 10px;
+        background: #eee;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 9pt;
+    }
 }
