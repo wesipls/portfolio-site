@@ -56,6 +56,9 @@ span {
     font-size: inherit;
     font-weight: inherit;
 }
+.print-only {
+    display: none;
+}
 h2 {
     display: flex;
     justify-content: space-between;
@@ -198,6 +201,14 @@ li {
         margin-bottom: 8px !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
+    }
+    .print-only {
+        display: inline !important;
+        text-decoration: none;
+        color: #0077b5;
+        padding: 2px 2px;
+        border-radius: 2px;
+        font-size: 9pt;
     }
     p a {
         color: #000 !important;
