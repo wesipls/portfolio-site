@@ -95,7 +95,7 @@ function getLangColor(lang) {
         Perl: "#0298c3",
         Awk: "#c30e0e",
         Makefile: "#427819",
-        Go Template: "#00ADD8",
+        "Go Template": "#00ADD8",
     };
 
     return colors[lang] || "#888";
