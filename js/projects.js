@@ -17,25 +17,65 @@ async function loadProjects() {
 function createProjectCard(repo) {
     const card = document.createElement("div");
     card.className = "project-card";
+
     const title = document.createElement("a");
     title.className = "project-title";
     title.href = repo.html_url;
     title.textContent = repo.name;
     title.target = "_blank";
+    title.rel = "noopener noreferrer";
+
     const desc = document.createElement("p");
     desc.className = "project-desc";
     desc.textContent = repo.description || "No description";
+
     const meta = document.createElement("p");
     meta.className = "project-meta";
     meta.textContent = "Updated: " + formatDate(repo.pushed_at);
+
+    const commit = createCommitElement(repo.last_commit);
     const langBar = createLanguageBar(repo.languages);
 
     card.appendChild(title);
     card.appendChild(meta);
     card.appendChild(desc);
+    card.appendChild(commit);
     card.appendChild(langBar);
 
     return card;
+}
+
+function createCommitElement(lastCommit) {
+    const commit = document.createElement("p");
+    commit.className = "project-commit";
+
+    if (!lastCommit) {
+        commit.textContent = "Last commit: unavailable";
+        return commit;
+    }
+
+    const prefix = document.createTextNode("Last commit: ");
+    const link = document.createElement("a");
+    link.href = lastCommit.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = truncateCommitMessage(lastCommit.message);
+
+    const suffix = document.createTextNode(
+        " (" + formatDate(lastCommit.date) + ")",
+    );
+
+    commit.appendChild(prefix);
+    commit.appendChild(link);
+    commit.appendChild(suffix);
+
+    return commit;
+}
+
+function truncateCommitMessage(message, maxLength = 80) {
+    if (!message) return "No message";
+    if (message.length <= maxLength) return message;
+    return message.slice(0, maxLength - 1) + "…";
 }
 
 function createLanguageBar(languages = {}) {
@@ -43,7 +83,6 @@ function createLanguageBar(languages = {}) {
     wrapper.className = "lang-wrapper";
 
     const total = Object.values(languages).reduce((a, b) => a + b, 0);
-
     const sorted = Object.entries(languages).sort((a, b) => b[1] - a[1]);
 
     const labels = document.createElement("div");
@@ -68,7 +107,6 @@ function createLanguageBar(languages = {}) {
     sorted.forEach(([lang, bytes]) => {
         const segment = document.createElement("div");
         segment.className = "lang-segment";
-
         segment.style.display = "inline-block";
         segment.style.height = "6px";
         segment.style.width = total ? (bytes / total) * 100 + "%" : "0%";
