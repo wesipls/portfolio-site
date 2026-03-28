@@ -29,15 +29,10 @@ function createProjectCard(repo) {
     desc.className = "project-desc";
     desc.textContent = repo.description || "No description";
 
-    const meta = document.createElement("p");
-    meta.className = "project-meta";
-    meta.textContent = "Updated: " + formatDate(repo.pushed_at);
-
     const commit = createCommitElement(repo.last_commit);
     const langBar = createLanguageBar(repo.languages);
 
     card.appendChild(title);
-    card.appendChild(meta);
     card.appendChild(desc);
     card.appendChild(commit);
     card.appendChild(langBar);
