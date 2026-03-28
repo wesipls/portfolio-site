@@ -129,7 +129,7 @@ function getLangColor(lang) {
         Awk: "#c30e0e",
         Makefile: "#427819",
         "Go Template": "#00ADD8",
-        Sed: "#64b970",
+        sed: "#64b970",
     };
 
     return colors[lang] || "#888";
