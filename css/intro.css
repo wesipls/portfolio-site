@@ -23,7 +23,7 @@ span {
     color: #0077b5;
     padding: 2px 2px;
     border-radius: 2px;
-    font-size: 8pt;
+    font-size: 9pt;
     cursor: pointer;
 }
 .contact-link:hover::before {
@@ -70,7 +70,7 @@ h2 {
     letter-spacing: 1px;
 }
 .side-link {
-    font-size: 8pt;
+    font-size: 9pt;
     text-decoration: none;
     margin-bottom: 3px;
     text-transform: none;
@@ -334,7 +334,7 @@ li {
     }
 
     li {
-        font-size: 8pt;
+        font-size: 8.5pt;
         line-height: 1.4;
         margin-bottom: 4px;
     }
@@ -357,7 +357,7 @@ li {
         color: #333;
         margin-bottom: 2px;
         text-transform: uppercase;
-        font-size: 8pt;
+        font-size: 8.5pt;
         letter-spacing: 0.5px;
     }
     .tech-row {
