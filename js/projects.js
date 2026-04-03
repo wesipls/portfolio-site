@@ -130,6 +130,7 @@ function getLangColor(lang) {
         Makefile: "#427819",
         "Go Template": "#00ADD8",
         sed: "#64b970",
+        Python: "#3572A5",
     };
 
     return colors[lang] || "#888";
