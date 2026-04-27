@@ -5,10 +5,9 @@
 .project-card {
     padding: 0.3cm;
     margin-bottom: 0.75cm;
-    border: 1px solid #666;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--soft-border-color);
 }
 
 .project-title {

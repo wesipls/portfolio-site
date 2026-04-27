@@ -1,13 +1,35 @@
+:root {
+    --page-background: #f6f6f6;
+    --surface-background: #fdfdfd;
+    --text-color: #222;
+    --muted-color: #666;
+    --rule-color: #333;
+    --link-color: #0077b5;
+    --link-hover-color: #005582;
+    --link-hover-background: #f0f7ff;
+    --accent-color: #4af626;
+    --soft-accent-background: #e1f0ff;
+    --soft-border-color: #eee;
+    --shadow-soft: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+html,
 body {
-    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    background-color: var(--page-background);
+}
+
+body {
+    color: var(--text-color);
+    font-family: "JetBrains Mono", "Courier New", monospace;
     -webkit-font-smoothing: antialiased;
 }
+
 .main-container {
     width: 21cm;
     height: 29.7cm;
     margin: 20px auto;
     padding: 0.5cm 1cm;
-    background-color: #fdfdfd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-  }
+    background-color: var(--surface-background);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--soft-border-color);
+}

@@ -39,7 +39,6 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/template.css" />
-        <link rel="stylesheet" href="css/intro.css" />
         <link rel="canonical" href="https://valkama.kim/" />
         <link
             rel="icon"
@@ -47,14 +46,13 @@
         />
         <script type="module">
             import "./js/vim.js";
-            import "./js/print.js";
         </script>
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Kim Valkama",
-                "url": "https://valkama.kim",
+                "url": "https://valkama.kim/",
                 "jobTitle": "Infrastructure & Platform Engineer",
                 "address": {
                     "@type": "PostalAddress",
@@ -82,199 +80,15 @@
         </script>
     </head>
     <body>
-        <div class="main-container">
-            <h1>
-                Kim Valkama
-                <span>Infrastructure & Platform Engineer | BBA</span>
-            </h1>
-            <p class="contact-block">
-                <a class="contact-link" href="mailto:hello@valkama.kim"
-                    >hello@valkama.kim</a
-                ><span class="separator"> | </span>
-                <a class="contact-link" href="tel:+358445959906"
-                    >+358 44 595 9906</a
-                ><span class="separator"> | </span>
-                <a
-                    class="contact-link"
-                    href="https://www.google.com/maps/search/?api=1&query=Espoo,+Finland"
-                    target="_blank"
-                    >Espoo, Finland</a
-                ><span class="separator"> | </span>
-                <a
-                    class="contact-link"
-                    href="https://linkedin.com/in/kim-valkama"
-                    >LinkedIn</a
-                ><span class="separator"> | </span>
-                <a class="contact-link" href="https://github.com/wesipls"
-                    >GitHub</a
-                ><span class="separator"> | </span>
-                <button
-                    onclick="prepareAndPrint()"
-                    class="contact-link print-btn"
-                >
-                    Print to PDF
-                </button>
-                <a href="https://valkama.kim" class="print-only"> Website </a>
-            </p>
-            <h2>
-                Profile
-                <a href="projects" class="side-link">Active Projects -></a>
-            </h2>
-            <hr />
-            <p class="profile">Languages: Finnish | Swedish | English</p>
-            <p class="profile">
-                Infrastructure & Platform Engineer with 13+ years of experience
-                owning and operating production systems.
-            </p>
-            <p class="profile">
-                I design Linux-based infrastructure with a focus on reliability,
-                cost-efficiency, and developer productivity—favoring pragmatic
-                solutions over unnecessary complexity, and building systems that
-                hold up under real-world conditions.
-            </p>
-            <h2>Core Technology</h2>
-            <hr />
-            <p class="tech-row">
-                <strong>Platform & Infrastructure:</strong> Linux, AWS, Docker,
-                Networking, Ansible
-            </p>
-            <p class="tech-row">
-                <strong>Automation & CI/CD:</strong> Git-driven workflow, CI/CD
-                (Github Actions), configuration management
-            </p>
-            <p class="tech-row">
-                <strong>Observability & Operations:</strong> Monitoring,
-                Alerting, Incident Response, Disaster Recovery
-            </p>
-            <p class="tech-row">
-                <strong>Programming / Scripting:</strong> Bash automation,
-                Python and Go for system tooling
-            </p>
-            <h2>Professional Experience</h2>
-            <hr />
-
-            <div class="exp-header">
-                <h3>Viomba Oy,</h3>
-                <h4>Infrastructure & Platform Engineer</h4>
-                <h5>06/2021 - Present | Remote, Finland</h5>
-            </div>
-            <ul>
-                <li>
-                    Engineered a 2-tier DR framework using Local and AWS Glacier
-                    backups.
-                </li>
-                <li>
-                    Led recurring infrastructure optimizations, cutting hosting
-                    costs by up to 40%.
-                </li>
-                <li>
-                    Developed CI/CD pipelines via GitHub Actions, maintaining
-                    99.9% platform uptime.
-                </li>
-                <li>
-                    Built custom CLI orchestrators and Ansible suites for
-                    fault-tolerant scaling.
-                </li>
-            </ul>
-
-            <div class="exp-header">
-                <h3>Pharazon AB,</h3>
-                <h4>Linux System administrator</h4>
-                <h5>05/2020 - 06/2021 | Helsinki, Finland</h5>
-            </div>
-            <ul>
-                <li>Led data-center migration and fiber provisioning.</li>
-                <li>
-                    Managed diverse service stacks (Jenkins, Exim, crawlers,
-                    customer applications).
-                </li>
-                <li>
-                    Built infrastructure for a new branch office; maintained HQ
-                    networking, servers, and dev environments.
-                </li>
-            </ul>
-
-            <div class="exp-header">
-                <h3>Cycle IT,</h3>
-                <h4>Entrepreneur</h4>
-                <h5>08/2018 - 10/2020 | Espoo, Finland</h5>
-            </div>
-            <ul>
-                <li>
-                    Managed client web infrastructure and deployed small-scale
-                    network architectures.
-                </li>
-                <li>
-                    Provided end-to-end IT support and server maintenance for
-                    SMEs and non-profits.
-                </li>
-            </ul>
-
-            <div class="exp-header">
-                <h3>Relex Solutions,</h3>
-                <h4>Application Specialist</h4>
-                <h5>05/2017 - 02/2019 | Helsinki, Finland</h5>
-            </div>
-            <ul>
-                <li>
-                    Served as escalation point for complex issues in large-scale
-                    production systems.
-                </li>
-                <li>
-                    Participated in incident recovery and performed emergency
-                    production restore.
-                </li>
-            </ul>
-
-            <div class="exp-header">
-                <h3>Integral Oy,</h3>
-                <h4>System administrator</h4>
-                <h5>06/2013 - 01/2017 | Helsinki, Finland</h5>
-            </div>
-            <ul>
-                <li>
-                    Performed manual migration of internal wiki infrastructure
-                    to a new system.
-                </li>
-                <li>
-                    Resolved technical issues and performed workstation hardware
-                    upgrades.
-                </li>
-            </ul>
-
-            <h2>Education</h2>
-            <hr />
-
-            <div class="exp-header">
-                <h3>Full stack dev course,</h3>
-                <h4>Opiframe Oy</h4>
-                <h5>04/2020 - 10/2020 | Espoo, Finland</h5>
-            </div>
-            <ul>
-                <li>Core tech: React, NodeJS, Express, MongoDB.</li>
-            </ul>
-            <div class="exp-header">
-                <h3>Bachelor of Business Administration,</h3>
-                <h4>Laurea UAS</h4>
-                <h5>08/2013 - 08/2016 | Espoo, Finland</h5>
-            </div>
-            <ul>
-                <li>
-                    Thesis:
-                    <strong
-                        >Automating an IT environment with a service delivery
-                        platform</strong
-                    >
-                    <a
-                        href="https://www.theseus.fi/bitstream/handle/10024/120959/Thesis.pdf?sequence=1"
-                        target="_blank"
-                        class="thesis-link"
-                    >
-                        [Link]
-                    </a>
-                </li>
-            </ul>
-            <h3>References available upon request.</h3>
-        </div>
+        <main class="main-container">
+            <h1>Hello World!</h1>
+            <nav aria-label="Primary">
+                <a href="cv">CV</a>
+                <a href="projects">Projects</a>
+                <a href="mailto:hello@valkama.kim">Email</a>
+                <a href="https://linkedin.com/in/kim-valkama">LinkedIn</a>
+                <a href="https://github.com/wesipls">GitHub</a>
+            </nav>
+        </main>
     </body>
 </html>
