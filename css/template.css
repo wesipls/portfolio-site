@@ -33,3 +33,12 @@ body {
     box-shadow: var(--shadow-soft);
     border: 1px solid var(--soft-border-color);
 }
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 22pt;
+    margin: 0;
+    font-weight: normal;
+}

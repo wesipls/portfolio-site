@@ -1,11 +1,3 @@
-h1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 22pt;
-    margin: 0;
-    font-weight: normal;
-}
 span {
     font-size: 10pt;
     font-weight: normal;
